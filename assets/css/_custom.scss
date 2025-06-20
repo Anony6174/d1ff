@@ -9,11 +9,11 @@ img.logo {
   font-weight: 600;
 }
 body.home-page {
-  background-image: url("/images/me.jpg"); // If using Hugo templating
+  background-image: url("/d1ff/images/me.jpg"); // If using Hugo templating
 }
 
 .header-wrapper {
-  background-image: url('/images/night.jpeg');
+  background-image: url('/d1ff/images/night.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,7 +22,7 @@ body.home-page {
 
 
 // body.home {
-//   background-image: url('/images/me.jpg');
+//   background-image: url('/d1ff/images/me.jpg');
 //   background-size: cover;
 //   background-position: center;
 //   background-repeat: no-repeat;

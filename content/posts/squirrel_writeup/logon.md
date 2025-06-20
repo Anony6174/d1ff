@@ -64,7 +64,7 @@ Each one of a process’s threads has its own context: its own `thread ID`, `its
 
 BUT since all of the thread are part of the same process, they share the same **`VIRTUAL MEMORY ADDRESS SPACE`** :  the same `code`, the same `heap`, the same `shared libraries` and the same `open file descriptors`. 
 
-![image.png](images/image.png)
+![image.png](/d1ff/images/image.png)
 
 *As shown in the image, threads from the same process **share the code, data, and files**, but each one gets its **own stack** to work with.*
 
@@ -144,11 +144,11 @@ main() continues after join
 
 ***Before*** `pthread_create` is being called
 
-![Screenshot from 2025-04-18 15-16-40.png](/images_logon/Screenshot_from_2025-04-18_15-16-40.png)
+![Screenshot from 2025-04-18 15-16-40.png](/d1ff/images/Screenshot_from_2025-04-18_15-16-40.png)
 
 ***After*** `pthread_create` is being called
 
-![guard page.png](/images_logon/guard_page.png)
+![guard page.png](/d1ff/images/guard_page.png)
 
 ---
 
@@ -157,13 +157,13 @@ Now since we have learnt all the requisites to understand the source code of the
 lets first have a look of the decompiled binary.
 
 
-<img src="/images_logon/cbee3a58-b22a-4799-9248-4c915289a943.png" width="600" />
+<img src="/d1ff/images_logon/cbee3a58-b22a-4799-9248-4c915289a943.png" width="600" />
 
 <!-- ![mkmdfl;v.png](/images_logon/cbee3a58-b22a-4799-9248-4c915289a943.png) -->
 
 This is the `main` fucntion.
 
-![Screenshot from 2025-04-10 15-51-47.png](/images_logon/Screenshot_from_2025-04-10_15-51-47.png)
+![Screenshot from 2025-04-10 15-51-47.png](/d1ff/images/Screenshot_from_2025-04-10_15-51-47.png)
 
 > First, it disables buffering on `stdout` and `stdin` using `setbuf` (this can be ignored for now).
 > 
@@ -185,7 +185,7 @@ After that:
 
 This is the `userinfo` function.
 
-![Screenshot from 2025-04-10 15-52-17.png](/images_logon/Screenshot_from_2025-04-10_15-52-17.png)
+![Screenshot from 2025-04-10 15-52-17.png](/d1ff/images/Screenshot_from_2025-04-10_15-52-17.png)
 
 > lets see!!
 > 
@@ -215,7 +215,7 @@ This is the `userinfo` function.
 
 This is `auth` function.
 
-![Screenshot from 2025-04-10 15-52-05.png](/images_logon/Screenshot_from_2025-04-10_15-52-05.png)
+![Screenshot from 2025-04-10 15-52-05.png](/d1ff/images/Screenshot_from_2025-04-10_15-52-05.png)
 
 Here's where the real objective becomes clear:
 
@@ -234,7 +234,7 @@ The program then compares the user input against the contents read from `flag.tx
 
 Now since we have understood what the program is doing let’s take a look on virtual memory mapping of it with the help of `gdb-pwndbg` .
 
-![auth_thread.png](/images_logon/auth_thread.png)
+![auth_thread.png](/d1ff/images/auth_thread.png)
 
 > As we observed in the `main` function, the `auth_thread` is created **after** the `userinfo_thread`.
 > 
@@ -284,7 +284,7 @@ Thus, if we:
 
 Using `gdb-pwndbg`, I determined that the offset between the base address of the `name_buffer` (allocated in `userinfo_thread`) and the `auth` thread’s `buffer` is approximately **8,392,928 bytes** — assuming the memory between the two thread stacks is **contiguous**.
 
-![image.png](/images_logon/337cf7a1-cd81-45e3-8133-2ae2815bbed5.png)
+![image.png](/d1ff/images/337cf7a1-cd81-45e3-8133-2ae2815bbed5.png)
 
 <aside>
 💡
