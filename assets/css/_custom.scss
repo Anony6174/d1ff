@@ -1,0 +1,30 @@
+img.logo {
+  border-radius: 50%;     /* Makes it circular */
+  width: 30px;            /* Set size as needed */
+  height: 30px;
+  object-fit: cover;      /* Ensures image doesn't stretch */
+}
+.archive .posts .archive-item .title {
+  font-size: 1.2rem; /* adjust as needed */
+  font-weight: 600;
+}
+body.home-page {
+  background-image: url("/images/me.jpg"); // If using Hugo templating
+}
+
+.header-wrapper {
+  background-image: url('/images/night.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+// body.home {
+//   background-image: url('/images/me.jpg');
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-attachment: fixed;
+// }

@@ -1,0 +1,152 @@
+baseURL = 'https://anony6174.github.io/d1ff/'
+languageCode = 'en-us'
+title = "d1ff"
+theme = "FixIt"
+ignoreLogs = ['warning-dev-version']
+logo = "/images/me.jpg"
+headerwrapper = "/images/night.jpeg"
+
+
+[article]
+  showDate = true
+  showViews = false
+  showLikes = false
+  showDateOnlyInArticle = false
+  showDateUpdated = true
+  showAuthor = true
+  # showAuthorBottom = false
+  showHero = true
+  heroStyle = "thumbAndBackground" # valid options: basic, big, background, thumbAndBackground
+  layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
+  layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
+  showBreadcrumbs = true
+  showDraftLabel = true
+  showEdit = false
+  # editURL = "https://github.com/username/repo/"
+  editAppendPath = true
+  seriesOpened = true
+  showHeadingAnchors = true
+  showPagination = true
+  invertPagination = false
+  showReadingTime = true
+  showTableOfContents = true
+  showRelatedContent = true
+  relatedContentLimit = 3
+  showTaxonomies = true
+  showAuthorsBadges = true
+  showWordCount = true
+
+[markup]
+  _merge = "shallow"
+
+[outputs]
+  _merge = "shallow"
+  home = ["HTML", "RSS", "JSON"]  
+
+[taxonomies]
+  _merge = "shallow"  
+
+[imaging]
+  anchor = 'Center'
+
+
+  
+
+[params]
+  # AUTHOR info — required
+  [params.author]
+    name = "_d1ff"
+    avatar = "/images/me.jpg"
+    email = "helloyou2520@gmail.com"
+    link = "https://github.com/Anony6174/"
+  
+  [params.social]
+    github = "https://github.com/Anony6174"
+    twitter = "https://x.com/Anuj1337"
+  
+  
+  # FOOTER customization
+  [params.footer]
+    enable = false
+    customText = "© 2025 d1ff. All rights reserved."
+    hugo = false
+    theme = true
+  
+  [params.archives]
+    paginate = 20
+    dateFormat = "01-02"
+
+
+  
+
+
+  [params.plugins]
+    [params.plugins.fontawesome]
+      enable = true 
+  
+  
+
+  # Site appearance
+  defaultTheme = "dark"         # 'light', 'dark', or 'auto'
+  dateFormat = "Jan 2, 2006"    # Customize date format
+  colorScheme = "auto"
+
+
+  [params.font]
+    # Available options: "system", "sans-serif", "serif", "monospace", or use your own
+    family = "chaucer"         # or "Fira Code", "Inter", "Roboto", etc.
+    code = "chaucer"       # font for code blocks
+  [params.assets]
+    customCSS = ["css/_custom.scss"]  
+
+  
+  
+  enableInlineShortcodes = true
+  [params.page]
+    #home = { enable = true }
+    showMeta = true            # show date, author, tags, etc.
+    showTags = true            # specifically show tags
+    showCategories = true      # show categories too (optional)
+
+  
+  [params.home]
+    paginate = 10
+    [params.home.profile]
+      enable = true
+      gravatarEmail = ""
+      avatarURL = "/images/me.jpg"
+      avatarMenu = ""
+      title = "d1ff"
+      subtitle = "Every fix is temporary. Every bug is eternal."
+      typeit = true
+      social = true
+      disclaimer = ""
+    [params.home.posts]
+      enable = false
+      
+  
+  [params.readingProgress]
+    enable = true
+    start = "left"
+    position = "top"
+    reversed = false
+    light = "#FFA500"  # black for light theme
+    dark = "#777777"   # white for dark theme
+    height = "3px"
+  
+  [params.header]
+    desktopMode = "sticky"
+    mobileMode = "auto"
+    [params.header.title]
+      logo = "/images/me.jpg"
+      name = ""
+      pre = ""
+      post = ""
+      typeit = false
+    [params.header.subtitle]
+      name = ""
+      typeit = false
+  
+  [params.image]
+    cacheRemote = true
+    optimise = true
