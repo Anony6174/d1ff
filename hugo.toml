@@ -150,3 +150,7 @@ headerwrapper = "/images/night.jpeg"
   [params.image]
     cacheRemote = true
     optimise = true
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'  

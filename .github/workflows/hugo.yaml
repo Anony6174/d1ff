@@ -5,7 +5,7 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches:
-      - master
+      - main
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -32,7 +32,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.147.8
+      HUGO_VERSION: 0.147.2
       HUGO_ENVIRONMENT: production
       TZ: America/Los_Angeles
     steps:
@@ -93,14 +93,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-title: Configure FixIt
-date: 2024-03-07T15:37:59+08:00
-tags:
-  - Configuration
-  - Installation
-  - Basics
-categories:
-  - Documentation
-collections:
-  - Getting Started
