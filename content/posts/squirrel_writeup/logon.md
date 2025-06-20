@@ -157,7 +157,7 @@ Now since we have learnt all the requisites to understand the source code of the
 lets first have a look of the decompiled binary.
 
 
-<img src="/d1ff/images_logon/cbee3a58-b22a-4799-9248-4c915289a943.png" width="600" />
+<img src="/d1ff/images/cbee3a58-b22a-4799-9248-4c915289a943.png" width="600" />
 
 <!-- ![mkmdfl;v.png](/images_logon/cbee3a58-b22a-4799-9248-4c915289a943.png) -->
 
