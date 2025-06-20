@@ -9,7 +9,7 @@ img.logo {
   font-weight: 600;
 }
 body.home-page {
-  background-image: url("/d1ff/images/me.jpg"); // If using Hugo templating
+  background-image: url("/images/me.jpg"); // If using Hugo templating
 }
 
 .header-wrapper {
@@ -19,7 +19,12 @@ body.home-page {
   background-repeat: no-repeat;
 }
 
-
+// .page.home {
+//   background-image: url("/d1ff/images/cool_me.jpg");
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+// }
 
 // body.home {
 //   background-image: url('/d1ff/images/me.jpg');

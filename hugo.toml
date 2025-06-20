@@ -1,11 +1,10 @@
-baseURL = 'https://anony6174.github.io/d1ff/'
+baseURL = "https://anony6174.github.io/d1ff/"
 languageCode = 'en-us'
 title = "d1ff"
 theme = "FixIt"
 ignoreLogs = ['warning-dev-version']
-logo = "/d1ff/images/me.jpg"
-headerwrapper = "/d1ff/images/night.jpeg"
 
+canonifyURLs = true
 
 [article]
   showDate = true
@@ -56,7 +55,7 @@ headerwrapper = "/d1ff/images/night.jpeg"
   # AUTHOR info — required
   [params.author]
     name = "_d1ff"
-    avatar = "/d1ff/images/me.jpg"
+    avatar = "/images/me.jpg"
     email = "helloyou2520@gmail.com"
     link = "https://github.com/Anony6174/"
   
