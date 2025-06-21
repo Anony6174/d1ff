@@ -6,53 +6,29 @@ ignoreLogs = ['warning-dev-version']
 
 canonifyURLs = true
 
-[article]
-  showDate = true
-  showViews = false
-  showLikes = false
-  showDateOnlyInArticle = false
-  showDateUpdated = true
-  showAuthor = true
-  # showAuthorBottom = false
-  showHero = true
-  heroStyle = "thumbAndBackground" # valid options: basic, big, background, thumbAndBackground
-  layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
-  layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
-  showBreadcrumbs = true
-  showDraftLabel = true
-  showEdit = false
-  # editURL = "https://github.com/username/repo/"
-  editAppendPath = true
-  seriesOpened = true
-  showHeadingAnchors = true
-  showPagination = true
-  invertPagination = false
-  showReadingTime = true
-  showTableOfContents = true
-  showRelatedContent = true
-  relatedContentLimit = 3
-  showTaxonomies = true
-  showAuthorsBadges = true
-  showWordCount = true
+
 
 [markup]
   _merge = "shallow"
 
+[taxonomies]
+  _merge = "shallow"  
+  archive = "archives"
+[imaging]
+  anchor = 'Center'
+
 [outputs]
   _merge = "shallow"
   home = ["HTML", "RSS", "JSON"]  
+  section = ["HTML"]
+  taxonomy = ["HTML"]
 
-[taxonomies]
-  _merge = "shallow"  
-
-[imaging]
-  anchor = 'Center'
 
 
   
 
 [params]
-  # AUTHOR info — required
+  
   [params.author]
     name = "_d1ff"
     avatar = "/images/me.jpg"
@@ -60,9 +36,15 @@ canonifyURLs = true
     link = "https://github.com/Anony6174/"
   
   [params.social]
-    github = "https://github.com/Anony6174"
-    twitter = "https://x.com/Anuj1337"
-  
+    github = "Anony6174"
+    twitter = "Anuj1337"
+
+  [params.recentlyUpdated]
+    archives = true
+    section = true
+    list = true
+    days = 30
+    maxCount = 10
   
   # FOOTER customization
   [params.footer]
@@ -71,9 +53,7 @@ canonifyURLs = true
     hugo = false
     theme = true
   
-  [params.archives]
-    paginate = 20
-    dateFormat = "01-02"
+
 
 
   
@@ -91,10 +71,7 @@ canonifyURLs = true
   colorScheme = "auto"
 
 
-  [params.font]
-    # Available options: "system", "sans-serif", "serif", "monospace", or use your own
-    family = "chaucer"         # or "Fira Code", "Inter", "Roboto", etc.
-    code = "chaucer"       # font for code blocks
+
   [params.assets]
     customCSS = ["css/_custom.scss"]  
 
@@ -102,12 +79,17 @@ canonifyURLs = true
   
   enableInlineShortcodes = true
   [params.page]
-    #home = { enable = true }
+    home = { enable = true }
     showMeta = true            # show date, author, tags, etc.
     showTags = true            # specifically show tags
     showCategories = true      # show categories too (optional)
+    
 
-  
+
+  [params.archives]
+    paginate = 20
+    dateFormat = "01-02"
+
   [params.home]
     paginate = 10
     [params.home.profile]
@@ -150,6 +132,58 @@ canonifyURLs = true
     cacheRemote = true
     optimise = true
 
+  mainSectionPages = ["posts"]  
+
 [caches]
   [caches.images]
     dir = ':cacheDir/images'  
+
+
+[menu]
+  [[menu.main]]
+    identifier = "archives"
+    parent = ""
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "Archives"
+    url = "/archives/"
+    # title will be shown when you hover on this menu link
+    title = ""
+    weight = 1
+    # FixIt 0.2.14 | NEW add user-defined content to menu items
+    [menu.main.params]
+      # add css class to a specific menu item
+      class = ""
+      # whether set as a draft menu item whose function is similar to a draft post/page
+      draft = false
+      # FixIt 0.2.16 | NEW add fontawesome icon to a specific menu item
+      icon = "fa-solid fa-archive"
+      # FixIt 0.2.16 | NEW set menu item type, optional values: ["mobile", "desktop"]
+      type = ""
+      # FixIt 0.3.9 | NEW whether to show the submenu item divider line
+      divided = false
+  [[menu.main]]
+    identifier = "categories"
+    parent = ""
+    pre = ""
+    post = ""
+    name = "Categories"
+    url = "/categories/"
+    title = ""
+    weight = 2
+    [menu.main.params]
+      icon = "fa-solid fa-folder-tree"
+  [[menu.main]]
+    identifier = "tags"
+    parent = ""
+    pre = ""
+    post = ""
+    name = "Tags"
+    url = "/tags/"
+    title = ""
+    weight = 3
+    [menu.main.params]
+      icon = "fa-solid fa-tags"    
+  

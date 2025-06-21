@@ -5,15 +5,15 @@ date: 2025-06-20T03:21:46+05:30
 # slug: 38114d4
 # draft: false
 # author:
-
+type: "posts"
 description:
 keywords: 
 license:
 comment: false
 weight: 0
 tags: ["Threads", "Processes"]
-categories:
-  - Pwning
+categories: ["Pwning"]
+  
   
 hiddenFromHomePage: false
 hiddenFromSearch: false
