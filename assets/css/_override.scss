@@ -1,5 +1,5 @@
 // @import url('https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Regular/result.css');
-$global-font-family: 'sans-serif', $global-font-family;
+// $global-font-family: 'sans-serif', $global-font-family;
 
 $global-background-color: #ffffffab;
 $global-background-color-dark: #0b0b0bf6;
@@ -13,7 +13,13 @@ $toc-content-font-size: 0.875rem;
 $header-title-font-family: $global-font-family;
 $header-title-font-size: 1.8rem;
 
-// $blockquote-color: #d86c5e;
-// $blockquote-color-dark: #e8a65f;
+$blockquote-color: #3e3c3c;
+$blockquote-color-dark: #c5d3d9;
+
+$global-font-color: #161209;
+$global-font-color-dark: #d6d6dd;
+
+$menu-active-color: #1fbbe6;
+$menu-active-color-dark: #fff;
 
 $header-height: 3.8rem;

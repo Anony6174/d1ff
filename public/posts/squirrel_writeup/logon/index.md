@@ -324,6 +324,6 @@ https://www.codequoi.com/en/threads-mutexes-and-concurrent-programming-in-c/
 
 ---
 
-> Author: [_d1ff](https://github.com/Anony6174/)  
+> Author: [_d1ff](https://discord.com/users/1157208253055381504)  
 > URL: http://localhost:1313/d1ff/posts/squirrel_writeup/logon/  
 

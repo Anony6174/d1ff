@@ -33,11 +33,12 @@ canonifyURLs = true
     name = "_d1ff"
     avatar = "/images/me.jpg"
     email = "helloyou2520@gmail.com"
-    link = "https://github.com/Anony6174/"
+    link = "https://discord.com/users/1157208253055381504"
   
   [params.social]
     github = "Anony6174"
     twitter = "Anuj1337"
+    discord = "1157208253055381504"
 
   [params.recentlyUpdated]
     archives = true
@@ -111,8 +112,8 @@ canonifyURLs = true
     start = "left"
     position = "top"
     reversed = false
-    light = "#FFA500"  # black for light theme
-    dark = "#777777"   # white for dark theme
+    light = "#FFA500"  
+    dark = "#00FFFF"   
     height = "3px"
   
   [params.header]

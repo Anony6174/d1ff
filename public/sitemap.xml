@@ -2,30 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/d1ff/categories/</loc>
-    <lastmod>2025-06-20T03:21:46+05:30</lastmod>
+    <lastmod>2025-06-28T03:21:46+05:30</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/d1ff/tags/fsop/</loc>
+    <lastmod>2025-06-28T03:21:46+05:30</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/d1ff/tags/heap-exploitation/</loc>
+    <lastmod>2025-06-28T03:21:46+05:30</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/d1ff/</loc>
-    <lastmod>2025-06-20T03:21:46+05:30</lastmod>
+    <lastmod>2025-06-28T03:21:46+05:30</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/d1ff/tags/null-byte-poisoning/</loc>
+    <lastmod>2025-06-28T03:21:46+05:30</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/d1ff/posts/</loc>
-    <lastmod>2025-06-20T03:21:46+05:30</lastmod>
+    <lastmod>2025-06-28T03:21:46+05:30</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/d1ff/categories/pwning/</loc>
+    <lastmod>2025-06-28T03:21:46+05:30</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/d1ff/posts/smiley_writeup/limit/</loc>
+    <lastmod>2025-06-28T03:21:46+05:30</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/d1ff/tags/</loc>
+    <lastmod>2025-06-28T03:21:46+05:30</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/d1ff/tags/tcache/</loc>
+    <lastmod>2025-06-28T03:21:46+05:30</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/d1ff/tags/processes/</loc>
     <lastmod>2025-06-20T03:21:46+05:30</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/d1ff/categories/pwning/</loc>
-    <lastmod>2025-06-20T03:21:46+05:30</lastmod>
-  </url>
-  <url>
     <loc>http://localhost:1313/d1ff/posts/squirrel_writeup/logon/</loc>
-    <lastmod>2025-06-20T03:21:46+05:30</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/d1ff/tags/</loc>
     <lastmod>2025-06-20T03:21:46+05:30</lastmod>
   </url>
   <url>
