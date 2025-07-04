@@ -390,7 +390,7 @@ Now, when we print the content of this freshly reallocated chunk, we see a point
 <aside>
 💡
 
-Why does this happen? Because `malloc` is lazy — it doesn't bother clearing out the contents of the chunk before handing it back to you. Combine this with how **tcache bins** work (specifically, storing forward pointers inside freed chunks), to better understand how tcache works, look here → 
+Why does this happen? Because `malloc` is lazy — it doesn't bother clearing out the contents of the chunk before handing it back to you. Combine this with how **tcache bins** work (specifically, storing forward pointers inside freed chunks). 
 
 </aside>
 
@@ -543,7 +543,6 @@ So, when we later **free the next (adjacent) chunk**, the heap checks the `prev_
 
 Now, if we free the **real middle chunk**, and then allocate a new chunk that fits the entire merged region, it will overlap with the recently free middle chunk. **Hence, Providing `UAF` on it.**
 
-image
 
 **Note:** The explanation above provides a **high-level overview** of the **Null Byte Poisoning** technique. When crafting a full exploit, you'll need to carefully account for all the **heap integrity checks** performed during `free()`, as well as perform some strategic [**heap feng shui**](https://en.wikipedia.org/wiki/Heap_feng_shui) to align your chunks just right and achieve the desired overlap.
 
@@ -719,6 +718,8 @@ log.critical(f'elf.address = {hex(elf.address)}')
 ## Final Blow
 
 Now we have everything we need — all the leaks and one of the most powerful exploitation primitives in hand: **arbitrary read and write**.
+
+**How arb read/write ?** -> Well, now we can allocate a chunk on the chunks pointer table itself ( *as it checks the limit condition and we know elf address too now*) , then we can write any arbitrary pointer in the table and can read/write at that location (*remember to modify the size table too for that index*).
 
 *At this point, getting shell access is just a matter of time.*
 
