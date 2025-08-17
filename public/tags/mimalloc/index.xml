@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mimalloc - Tag - d1ff</title>
+    <link>http://localhost:1313/d1ff/tags/mimalloc/</link>
+    <description>d1ff</description>
+    <generator>Hugo 0.147.8 &amp; FixIt v0.3.21-b2e6f70a</generator>
+    <language>en-us</language>
+    <managingEditor>helloyou2520@gmail.com (_d1ff)</managingEditor>
+    <webMaster>helloyou2520@gmail.com (_d1ff)</webMaster>
+    <lastBuildDate>Sun, 17 Aug 2025 10:30:00 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/d1ff/tags/mimalloc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>UIUCTF 2025 writeup (pwn/&#34;do re mi&#34;)</title>
+      <link>http://localhost:1313/d1ff/posts/uiu_writeup/doremi/</link>
+      <pubDate>Sun, 17 Aug 2025 10:30:00 +0530</pubDate><author>helloyou2520@gmail.com (_d1ff)</author>
+      <guid>http://localhost:1313/d1ff/posts/uiu_writeup/doremi/</guid>
+      <category domain="http://localhost:1313/d1ff/categories/pwning/">Pwning</category>
+      <description>&lt;p&gt;Over the weekend, I played &lt;strong&gt;UIUCTF&lt;/strong&gt; with some friends, and it turned out to be a really enjoyable experience.&lt;/p&gt;&#xA;&lt;p&gt;The &lt;strong&gt;pwn challenges&lt;/strong&gt; were the highlight for me — they were challenging enough to make me think hard, but also rewarding once I pieced things together.&lt;/p&gt;&#xA;&lt;p&gt;In this writeup, I’ll go through the &lt;code&gt;do re mi&lt;/code&gt; challenge step by step and explain how I solved it.&lt;/p&gt;&#xA;&lt;p&gt;Before jumping into the exploit, let’s first get a feel for the &lt;strong&gt;source code&lt;/strong&gt; that drives the challenge.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
