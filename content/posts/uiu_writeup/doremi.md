@@ -349,7 +349,7 @@ But then out of curiosity, I checked the scoreboard to see how many people had s
 
 *WTH?! Only 2 solves after 6 hours?*
 
-<img src="/d1ff/doremi/Source_Code.png" width="300" style="display: block; margin: auto;" />
+<img src="/d1ff/doremi/source_Code.png" width="300" style="display: block; margin: auto;" />
 <!-- ![source_Code.png](/d1ff/doremi/source_Code.png) -->
 
 Then I noticed one of the files was `libmimalloc.so.2.2` — and that’s when it clicked.
