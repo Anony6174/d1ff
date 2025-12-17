@@ -9,15 +9,15 @@ img.logo {
   font-weight: 600;
 }
 body.home-page {
-  background-image: url("/images/me.jpg"); // If using Hugo templating
+  background-image: url("/images/meerkat.jpg"); // If using Hugo templating
 }
 
-.header-wrapper {
-  background-image: url('/d1ff/images/night.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+// .header-wrapper {
+//   background-image: url('/d1ff/images/cover.jpg');
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+// }
 
 // .page.home {
 //   background-image: url("/d1ff/images/cool_me.jpg");
@@ -26,10 +26,10 @@ body.home-page {
 //   background-repeat: no-repeat;
 // }
 
-// body.home {
-//   background-image: url('/d1ff/images/me.jpg');
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-attachment: fixed;
-// }
+body.home {
+  background-image: url('/d1ff/images/meerkat.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
