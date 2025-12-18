@@ -31,7 +31,7 @@ canonifyURLs = true
   
   [params.author]
     name = "_d1ff"
-    avatar = "/images/me.jpg"
+    avatar = "/images/meerkat.jpg"
     email = "helloyou2520@gmail.com"
     link = "https://discord.com/users/1157208253055381504"
   
@@ -96,7 +96,7 @@ canonifyURLs = true
     [params.home.profile]
       enable = true
       gravatarEmail = ""
-      avatarURL = "/d1ff/images/me.jpg"
+      avatarURL = "/d1ff/images/meerkat.jpg"
       avatarMenu = ""
       title = "d1ff"
       subtitle = "Every fix is temporary. Every bug is eternal."
@@ -120,7 +120,7 @@ canonifyURLs = true
     desktopMode = "sticky"
     mobileMode = "auto"
     [params.header.title]
-      logo = "/d1ff/images/me.jpg"
+      logo = "/d1ff/images/meerkat.jpg"
       name = ""
       pre = ""
       post = ""
